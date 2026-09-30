@@ -1,10 +1,10 @@
-import Link from "next/link";
 export default function About() {
   return <main className="page"><div className="container page-inner narrow">
-    <Link className="back" href="/">← Home</Link>
     <p className="eyebrow">ABOUT</p><h1>Moses Vuma</h1>
-    <p className="lede">Marketing technology, data and automation leader with a hands-on technical background.</p>
-    <p>I work where marketing strategy meets technology execution. My experience spans Salesforce Marketing Cloud, Salesforce Data Cloud, customer data, automation, integrations, platform operations and technical program delivery.</p>
-    <p>This site is also my working knowledge base: a place to document what I learn, explain complicated platform topics and share practical frameworks with other technology and marketing professionals.</p>
+    <p className="lede">I&#39;m Moses Vuma — a technology leader with deep experience across AI, MarTech, cybersecurity, and cloud.</p>
+    <p>I build AI-driven revenue systems using Salesforce Marketing Cloud AI, autonomous agents (OpenClaw), and RAG on Data Cloud. I lead martech and data teams that turn automation into measurable business outcomes.</p>
+    <p>I hold CISSP and CompTIA Security+ certifications, with 5+ years in cybersecurity. I lead cloud and security teams, govern AI systems, and build the guardrails that let autonomous systems operate safely in production.</p>
+    <p>I lead cross-functional technology teams across AI, martech, cloud, and security. I own hiring, roadmaps, architecture, and delivery — and translate between technical teams and the business.</p>
+    <p>Let&#39;s connect on <a href="https://www.linkedin.com/in/nkosivuma" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
   </div></main>
 }
