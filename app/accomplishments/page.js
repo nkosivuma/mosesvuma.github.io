@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const items = [
   ["Salesforce", "Marketing Cloud & Data Cloud", "Built and operated enterprise marketing technology capabilities spanning Marketing Cloud, Data Cloud, personalization, integrations and campaign operations."],
   ["Leadership", "Data & Automation Platform Operations", "Led platform operations and automation initiatives across marketing technology, connecting strategy, engineering and business execution."],
@@ -11,7 +9,6 @@ const items = [
 export default function Accomplishments() {
   return <main className="page">
     <div className="container page-inner">
-      <Link className="back" href="/">← Home</Link>
       <p className="eyebrow">CAREER & IMPACT</p>
       <h1>Accomplishments</h1>
       <p className="lede">Selected examples of the platforms, programs and technical capabilities that define my work.</p>
