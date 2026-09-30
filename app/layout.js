@@ -1,4 +1,5 @@
 import "./globals.css";
+import { SiteHeader, SiteFooter } from "./components/SiteChrome";
 
 export const metadata = {
   title: "Technology | AI, MarTech, Cyber & Cloud | M. Vuma, CISSP",
@@ -10,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
