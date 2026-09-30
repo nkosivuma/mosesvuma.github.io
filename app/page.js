@@ -1,24 +1,15 @@
 import Link from "next/link";
 
-const resources = [
-  {
-    tag: "Salesforce Marketing Cloud",
-    title: "Private Domains vs. Marketing Cloud Next Authenticated Domains",
-    text: "A practical comparison of domain architecture, authentication, deliverability, governance and implementation considerations.",
-    href: "/resources/private-domains-vs-authenticated-domains/"
-  },
-  {
-    tag: "MarTech Architecture",
-    title: "Building a Modern Marketing Technology Stack",
-    text: "How data, orchestration, personalization and activation fit together across the modern MarTech ecosystem.",
-    href: "/resources/"
-  },
-  {
-    tag: "Automation",
-    title: "From Manual Marketing Operations to Automation",
-    text: "Principles for designing reliable, measurable automation across data, campaigns and operational workflows.",
-    href: "/resources/"
-  }
+const whatIDo = [
+  ["AI & Martech", "I build AI-driven revenue systems using Salesforce Marketing Cloud AI, autonomous agents (OpenClaw), and RAG on Data Cloud. I lead martech and data teams that turn automation into measurable business outcomes."],
+  ["Cybersecurity & Cloud", "I have 5+ years in cybersecurity and hold CISSP and CompTIA Security+. I lead cloud and security teams, govern AI systems, and build the guardrails that let autonomous systems operate safely in production."],
+  ["Technology Leadership", "I lead cross-functional technology teams across AI, martech, cloud, and security. I own hiring, roadmaps, architecture, and delivery — and translate between technical teams and the business."]
+];
+
+const selectedWork = [
+  ["Salesforce Marketing Cloud AI", "I built AI-enabled campaign workflows using Agentforce capabilities, with governance guardrails for AI-generated content and audience decisions."],
+  ["OpenClaw Autonomous Agents", "I designed and deployed self-hosted autonomous agents with persistent workspaces, skill plugins, and execution boundaries for production systems."],
+  ["RAG on Data Cloud", "I implemented retrieval-augmented generation with vector search, custom retrievers, and access policies enforced at the retrieval layer."]
 ];
 
 function Arrow() {
@@ -37,7 +28,7 @@ export default function Home() {
             <Link href="/accomplishments/">Accomplishments</Link>
             <Link href="/about/">About</Link>
           </nav>
-          <Link className="nav-cta" href="/contact/">Let's Connect <Arrow /></Link>
+          <Link className="nav-cta" href="/contact/">Let&apos;s Connect <Arrow /></Link>
         </div>
       </header>
 
@@ -45,21 +36,20 @@ export default function Home() {
         <section className="hero">
           <div className="container hero-grid">
             <div>
-              <p className="eyebrow">MARKETING TECHNOLOGY • DATA • AUTOMATION</p>
-              <h1>I build technology that makes <em>marketing smarter.</em></h1>
+              <p className="eyebrow">AI · MarTech · Cybersecurity (CISSP) · Cloud</p>
+              <h1>I build and secure AI-driven systems that power revenue.</h1>
               <p className="hero-copy">
-                I’m Moses Vuma, a marketing technology and data leader focused on
-                Salesforce, automation, data architecture and the systems that
-                turn customer information into measurable business outcomes.
+                I lead technology teams that turn AI and automation into measurable
+                business outcomes — and keep them secure.
               </p>
               <div className="hero-actions">
-                <Link className="button primary" href="/accomplishments/">View my work <Arrow /></Link>
-                <Link className="button secondary" href="/resources/">Explore resources</Link>
+                <Link className="button primary" href="/accomplishments/">AI &amp; MarTech Leadership <Arrow /></Link>
+                <Link className="button secondary" href="/accomplishments/">Cybersecurity &amp; Cloud Leadership</Link>
               </div>
             </div>
             <div className="hero-card">
               <div className="initials">MV</div>
-              <p>Marketing Technology<br />Data & Automation<br />Salesforce Architecture</p>
+              <p>CISSP · CompTIA Security+<br />Salesforce Certifications<br />Cybersecurity</p>
               <div className="line"></div>
               <small>Dallas–Fort Worth · Open to opportunities nationwide</small>
             </div>
@@ -70,23 +60,13 @@ export default function Home() {
           <div className="container split">
             <div>
               <p className="eyebrow">WHAT I DO</p>
-              <h2>Strategy backed by hands-on technical depth.</h2>
+              <h2>AI, security and technology leadership.</h2>
             </div>
-            <p>
-              My work sits at the intersection of business strategy, marketing
-              operations and engineering. I translate complex platforms and
-              data flows into scalable solutions that teams can actually use.
-            </p>
           </div>
           <div className="container capability-grid">
-            {[
-              ["01", "Marketing Technology", "Salesforce Marketing Cloud, Data Cloud, personalization, campaign operations and MarTech strategy."],
-              ["02", "Data & Architecture", "Customer data models, integrations, APIs, cloud storage, identity and activation architecture."],
-              ["03", "Automation", "Workflow automation, operational controls, CI/CD and repeatable processes that reduce manual work."],
-              ["04", "Technical Leadership", "Cross-functional delivery, platform governance, roadmap development and translating technical detail for executives."]
-            ].map(([n,t,d]) => (
-              <article className="capability" key={n}>
-                <span>{n}</span><h3>{t}</h3><p>{d}</p>
+            {whatIDo.map(([t, d], i) => (
+              <article className="capability" key={t}>
+                <span>{String(i + 1).padStart(2, "0")}</span><h3>{t}</h3><p>{d}</p>
               </article>
             ))}
           </div>
@@ -96,35 +76,38 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <div>
-                <p className="eyebrow">FROM THE KNOWLEDGE BASE</p>
-                <h2>Resources & lessons</h2>
+                <p className="eyebrow">SELECTED WORK</p>
+                <h2>Selected work</h2>
               </div>
-              <Link href="/resources/">View all <Arrow /></Link>
             </div>
             <div className="resource-grid">
-              {resources.map((r) => (
-                <Link className="resource-card" href={r.href} key={r.title}>
-                  <span className="tag">{r.tag}</span>
-                  <h3>{r.title}</h3>
-                  <p>{r.text}</p>
-                  <span className="read">Read article <Arrow /></span>
-                </Link>
+              {selectedWork.map(([t, d]) => (
+                <article className="resource-card" key={t}>
+                  <span className="tag">{t}</span>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
         <section className="statement">
-          <div className="container">
-            <p className="eyebrow">THE FOCUS</p>
-            <h2>Make complex technology understandable, useful and scalable.</h2>
+          <div className="container contact-box">
+            <p className="eyebrow">CONTACT</p>
+            <h2>Let&apos;s talk.</h2>
+            <p>
+              <Link href="/contact/">mosesvuma.com/contact</Link> ·{" "}
+              <a href="https://www.linkedin.com/in/nkosivuma">LinkedIn</a> ·{" "}
+              <a href="mailto:moses.n.vuma@gmail.com">Email</a>
+            </p>
           </div>
         </section>
       </main>
 
       <footer>
         <div className="container footer-wrap">
-          <div><strong>MOSES VUMA</strong><span>Marketing Technology · Data · Automation</span></div>
+          <div><strong>MOSES VUMA</strong><span>Technology · AI · MarTech · Cyber · Cloud</span></div>
           <span>© 2026 Moses Vuma</span>
         </div>
       </footer>
