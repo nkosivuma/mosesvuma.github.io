@@ -10,7 +10,6 @@ const articles = [
 export default function Resources() {
   return <main className="page">
     <div className="container page-inner">
-      <Link className="back" href="/">← Home</Link>
       <p className="eyebrow">KNOWLEDGE BASE</p>
       <h1>Resources</h1>
       <p className="lede">Practical lessons on Salesforce, marketing technology, data architecture, automation and digital transformation.</p>
