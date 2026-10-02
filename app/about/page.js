@@ -1,10 +1,10 @@
 export default function About() {
   return <main className="page"><div className="container page-inner narrow">
     <p className="eyebrow">ABOUT</p><h1>Moses Vuma</h1>
-    <p className="lede">I&#39;m Moses Vuma — a technology leader with deep experience across AI, MarTech, cybersecurity, and cloud.</p>
-    <p>I build AI-driven revenue systems using Salesforce Marketing Cloud AI, autonomous agents (OpenClaw), and RAG on Data Cloud. I lead martech and data teams that turn automation into measurable business outcomes.</p>
-    <p>I hold CISSP and CompTIA Security+ certifications, with 5+ years in cybersecurity. I lead cloud and security teams, govern AI systems, and build the guardrails that let autonomous systems operate safely in production.</p>
-    <p>I lead cross-functional technology teams across AI, martech, cloud, and security. I own hiring, roadmaps, architecture, and delivery — and translate between technical teams and the business.</p>
+    <p className="lede">Moses Vuma — Enterprise Technology Leader driving AI Transformation, Technology Strategy, CRM Innovation, Salesforce, Cybersecurity, and HCM at scale.</p>
+    <p>I lead AI-driven transformation across Salesforce, CRM, Data Cloud, Cybersecurity, HCM, enterprise integrations, and cloud platforms — converting complex technology ecosystems into secure, scalable solutions that deliver measurable business outcomes.</p>
+    <p>Certified in CISSP and CompTIA Security+, I bring deep expertise across cybersecurity, identity governance, cloud security, and enterprise technology risk. I build the governance, security controls, and architecture that enable AI and digital platforms to operate safely at enterprise scale.</p>
+    <p>I lead cross-functional teams spanning AI, CRM, Salesforce, Cybersecurity, HCM, MarTech, cloud, data, and enterprise architecture. I own strategy, roadmaps, architecture, governance, and delivery — translating between technical teams, executives, and the business.</p>
     <p>Let&#39;s connect on <a href="https://www.linkedin.com/in/nkosivuma" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
   </div></main>
 }
